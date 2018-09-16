@@ -94,7 +94,7 @@ describe "GIT" do
 
   it "13. From the add-img branch, what command do you run to fetch and merge all the 
       changes from the add-img branch on the remote 'origin'?" do
-    answer = "git pull"
+    answer = "git pull origin add-img"
     encoded_answer = "96887ba3f8740e85c07e4ee6bebba55ad8c779d0"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -207,7 +207,7 @@ describe "GIT" do
 # describe "DELETING BRANCHES:" do
   it "27. From master, what is the syntax for deleting a local branch called 
       'add-link'?" do
-    answer = "git branch -D add-link"
+    answer = "git branch -d add-link"
     encoded_answer = "6f91ced397c25c02c099b56d71e11955ea660fa0"
     expect(encode(answer)).to eq(encoded_answer)
   end
